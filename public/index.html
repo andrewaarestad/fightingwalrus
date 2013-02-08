@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ruby on Rails: Welcome aboard</title>
+    <title>Fighting Walrus Radio</title>
     <style type="text/css" media="screen">
       body {
         margin: 0;
@@ -40,7 +40,7 @@
         border: 3px solid #aaa;
         border-top: none;
         padding: 25px;
-        width: 500px;
+        width: 100%;
       }
 
       #sidebar {
@@ -52,19 +52,26 @@
         clear: both;
       }
 
-      #header, #about, #getting-started {
-        padding-left: 75px;
-        padding-right: 30px;
+
+      #videobox {
+          margin: 0 auto;
+          text-align: center;
+      }
+
+      #description_text {
+          text-align: center;
+      }
+
+      #features_list {
+          margin: 0 auto;
+          padding-left: 20%;
       }
 
 
       #header {
-        background-image: url("/assets/rails.png");
-        background-repeat: no-repeat;
-        background-position: top left;
         height: 64px;
+        text-align: center;
       }
-      #header h1, #header h2 {margin: 0}
       #header h2 {
         color: #888;
         font-weight: normal;
@@ -72,82 +79,6 @@
       }
 
 
-      #about h3 {
-        margin: 0;
-        margin-bottom: 10px;
-        font-size: 14px;
-      }
-
-      #about-content {
-        background-color: #ffd;
-        border: 1px solid #fc0;
-        margin-left: -55px;
-        margin-right: -10px;
-      }
-      #about-content table {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 11px;
-        border-collapse: collapse;
-      }
-      #about-content td {
-        padding: 10px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-      }
-      #about-content td.name  {color: #555}
-      #about-content td.value {color: #000}
-
-      #about-content ul {
-        padding: 0;
-        list-style-type: none;
-      }
-
-      #about-content.failure {
-        background-color: #fcc;
-        border: 1px solid #f00;
-      }
-      #about-content.failure p {
-        margin: 0;
-        padding: 10px;
-      }
-
-
-      #getting-started {
-        border-top: 1px solid #ccc;
-        margin-top: 25px;
-        padding-top: 15px;
-      }
-      #getting-started h1 {
-        margin: 0;
-        font-size: 20px;
-      }
-      #getting-started h2 {
-        margin: 0;
-        font-size: 14px;
-        font-weight: normal;
-        color: #333;
-        margin-bottom: 25px;
-      }
-      #getting-started ol {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #getting-started li {
-        font-size: 18px;
-        color: #888;
-        margin-bottom: 25px;
-      }
-      #getting-started li h2 {
-        margin: 0;
-        font-weight: normal;
-        font-size: 18px;
-        color: #333;
-      }
-      #getting-started li p {
-        color: #555;
-        font-size: 13px;
-      }
 
 
       #sidebar ul {
@@ -171,19 +102,7 @@
         font-style: italic;
       }
     </style>
-    <script type="text/javascript">
-      function about() {
-        info = document.getElementById('about-content');
-        if (window.XMLHttpRequest)
-          { xhr = new XMLHttpRequest(); }
-        else
-          { xhr = new ActiveXObject("Microsoft.XMLHTTP"); }
-        xhr.open("GET","rails/info/properties",false);
-        xhr.send("");
-        info.innerHTML = xhr.responseText;
-        info.style.display = 'block'
-      }
-    </script>
+
   </head>
   <body>
     <div id="page">
@@ -193,9 +112,35 @@
 
       <div id="content">
         <div id="header">
+            <h1>Fighting Walrus Radio</h1>
+            <h3>iOS Radio for UAVs</h3>
         </div>
+          <br/>
 
-          <iframe width="560" height="315" src="http://www.youtube.com/embed/ssMbuAx_Toc" frameborder="0" allowfullscreen></iframe>
+          <div id="videobox">
+            <iframe width="560" height="315" src="http://www.youtube.com/embed/ssMbuAx_Toc" frameborder="0" allowfullscreen></iframe>
+          </div>
+
+          <br/>
+
+          <div id="features_list">
+              <h2>Key Features</h2>
+              <ul>
+                  <li>Integrated 3D Robotics Radio</li>
+                  <li>Supports AR Drone, Ardupilot</li>
+                  <li>1 mile approximate range</li>
+                  <li>Open Source software</li>
+                  <li>All-metal design</li>
+                  <li>Supports iPhone and iPad</li>
+                  <li>Lightning and 30-pin versions</li>
+              </ul>
+          </div>
+
+          <br/>
+          <div id="description_text">
+              <p>Full details about Fighting Walrus Radio to be announced at <a href="http://www.engadget.com/event/engadget-expand/about/">Engadget Expand</a> on March 16, 2013.</p>
+          </div>
+
       </div>
 
       <div id="footer">&nbsp;</div>
